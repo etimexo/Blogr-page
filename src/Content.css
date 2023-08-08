@@ -6,8 +6,44 @@
 .body {
     margin-top: 10vh;
     text-align: center;
-    background-image: url('./bg-pattern-circles.svg');
+    width: 100%;
 }
-h5 {
+.titles {
+    margin-top: 7vh;
     font-size: 1.8rem;
+    color: hsl(240, 10%, 16%);
+}
+p {
+    padding: 5px 20px;
+}
+.img {
+    margin-top: 7vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media only screen and (max-width: 600px) {
+    .col.ed {
+        display: none;
+    }
+}
+@media only screen and (min-width: 601px) {
+    .row {
+        display: flex;
+        padding: 5px 5%;
+        width: 95%;
+    }
+    .em {
+        display: none;
+    }
+    .col.ed {
+        /* display: block; */
+        /* width: 1px; */
+        /* position: absolute;
+        right: -10vw; */
+    }
+    .row {
+        display: flex;
+    }
 }
