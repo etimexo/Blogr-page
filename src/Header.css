@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --light-red: hsl(356, 100%, 66%);
+}
+ul {
+    list-style-type: none;
+}
+li {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+@media only screen and (max-width: 600px) {
+    nav {
+        display: flex;
+        padding: 10px 20px;
+        align-items: center;
+        justify-content: space-between;
+    }
+    header {
+        background-image: url('../src/bg-pattern-intro-mobile.svg');
+        background-size: 200%;
+        background-position: left;
+        background-color: var(--light-red);
+        height: 80vh;
+        color: #fff;
+        border-bottom-left-radius: 100px;
+    }
+    .logo {
+        font-size: 2rem;
+    }
+    .nav-menu {
+        position: fixed;
+        right: -10000px;
+
+    }
+    .nav-menu.active {
+        right: 0;
+    }
+    .content {
+        text-align: center;
+        padding: 50px 10px;
+    }
+    .content .modern {
+        font-size: 2.5rem;
+    }
+    .content .m2 {
+        margin-top: 20px;
+        font-size: 1.5rem;
+    }
+    .content button {
+        margin-top: 8vh;
+        display: inline;
+        border-radius: 50px;
+        padding: 10px 20px;
+        border: none;
+        margin-right: 20px;
+        width: 40vw;
+        height: 10vh;
+        font-size: 1.2em;
+    }
+    .content .btn1 {
+        background-color: #fff;
+        color: var(--light-red);
+    }
+    .content .btn2 {
+        /* background-color: var(--light-red); */
+        background-color: inherit;
+        color: #fff;
+        border: 2px solid #fff;
+    }
+}
+@media only screen and (min-width: 601px) {
+    header {
+        background-image: url('../src/bg-pattern-intro-desktop.svg');
+        background-size: 100%;
+        background-position: 50%;
+        border: 1px solid green;
+        background-color: var(--light-red);
+        height: 40vh;
+        
+    }
+    nav {
+        display: flex;
+        width: 100%;
+        padding: 2% 5%;
+        align-items: center;
+    }
+    .toggler {
+        display: none;
+    }
+    .logo {
+        padding-right: 50px;
+    }
+    ul {
+        display: flex;
+    }
+    li {
+        padding-right: 10px;
+    }
+}
+@media only screen and (min-width: 600px) {
+
+}
+@media only screen and (min-width: 600px) {
+
+}

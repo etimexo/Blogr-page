@@ -1,0 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.body {
+    margin-top: 10vh;
+    text-align: center;
+    background-image: url('./bg-pattern-circles.svg');
+}
+h5 {
+    font-size: 1.8rem;
+}
