@@ -1,49 +1,114 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 .body {
-    margin-top: 10vh;
-    text-align: center;
-    width: 100%;
+  margin-top: 10vh;
+  text-align: center;
+  width: 100%;
 }
 .titles {
-    margin-top: 7vh;
-    font-size: 1.8rem;
-    color: hsl(240, 10%, 16%);
+  margin-top: 7vh;
+  font-size: 1.8rem;
+  color: hsl(240, 10%, 16%);
 }
 p {
-    padding: 5px 20px;
+  padding: 5px 20px;
 }
 .img {
+  margin-top: 7vh;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.phoneback {
     margin-top: 7vh;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background-image: url('./bg-pattern-circles.svg');    
+    background-color: hsl(207, 13%, 34%);
 }
 @media only screen and (max-width: 600px) {
-    .col.ed {
-        display: none;
-    }
+  .em {
+    max-width: 100%;
+  }
+  .col-1 {
+    padding: 10px 20px;
+  }
+  .edd {
+    display: none;
+  }
 }
 @media only screen and (min-width: 601px) {
-    .row {
-        display: flex;
-        padding: 5px 5%;
-        width: 95%;
-    }
-    .em {
-        display: none;
-    }
-    .col.ed {
-        /* display: block; */
-        /* width: 1px; */
-        /* position: absolute;
-        right: -10vw; */
-    }
-    .row {
-        display: flex;
-    }
+  .row {
+    display: flex;
+    width: 100%;
+    align-items: center;
+  }
+  .em {
+    display: none;
+  }
+  .row .col-1 {
+    width: 60vw;
+    padding: 0 2vw;
+    font-size: 1.1rem;
+    padding-left: 8vw;
+
+  }
+  .titles {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3vh;
+  }
+  .col-1 p {
+    text-align: left;
+  }
+  .ed {
+    width: 40vw;
+    height: 100vh;
+  }
+  .row {
+    display: flex;
+  }
+  .phoneback {
+    height: 60vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 10px 5%;
+    color: #fff;
+    text-align: left;
+  }
+  .phoneback .titles {
+    margin-bottom: 15vh;
+    color: #fff;
+  }
+  .phone {
+    position: relative;
+    top: 5vh;
+    width: 100vw;
+    height: 90vh;
+  }
+
+  .phoneback p {
+    font-size: 1.2rem;
+  }
+  .last {
+    display: flex;
+    align-items: center;
+    margin-top: 15vh;
+    padding-right: 5%;
+  }
+  .laptopd {
+    position: relative;
+    left: -20vw;
+  }
+  .lastp {
+    width: 100%;
+    margin-left:-20vw;
+  }
+  .lastp p {
+    text-align: left;
+  }
+
 }

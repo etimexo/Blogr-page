@@ -1,0 +1,26 @@
+/* footer {
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: hsl(240, 10%, 16%);
+    border-top-right-radius: 100px;
+    color: white;
+    padding: 2% 6%;
+}
+ul {
+    list-style-type: none;
+    display: block;
+}
+li {
+    display: block;
+    margin-bottom: 20px;
+}
+li:hover, li:focus {
+    cursor: pointer;
+}
+@media only screen and (min-width: 601px) {
+    .logo {
+        font-size: 2rem;
+    }
+} */

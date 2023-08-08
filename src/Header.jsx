@@ -4,7 +4,7 @@ import Hamburger from "./icon-hamburger.svg";
 export default function Header() {
   return (
     <header className="container-fluid">
-      <nav className="nav navbar">
+      <nav className="container nav navbar">
         <div className="navbar-brand logo">Blogr</div>
         
         <div className="toggler">
@@ -39,11 +39,11 @@ export default function Header() {
         </ul>
       </nav>
       <div className="content">
-        <p className="modern">A modern <br /> publishing platform</p>
+        <p className="modern">A modern <br className="break" /> publishing platform</p>
         <p className="m2">Grow your online audience and build your online brand</p>
         <div className="buttons row">
-        <button className="btn btn1 col-xs-6">Start for free</button>
-        <button className="btn btn2 col-xs-6">Learn More</button>
+        <button className="btn btn1">Start for free</button>
+        <button className="btn btn2">Learn More</button>
         </div>
       </div>
     </header>
