@@ -11,7 +11,7 @@
 .titles {
   margin-top: 7vh;
   font-size: 1.8rem;
-  color: hsl(240, 10%, 16%);
+  color: hsl(208, 49%, 24%);
 }
 p {
   padding: 5px 20px;
@@ -27,10 +27,13 @@ p {
     margin-top: 7vh;
     background-image: url('./bg-pattern-circles.svg');    
     background-color: hsl(207, 13%, 34%);
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 900px) {
   .em {
     max-width: 100%;
+    margin-top: 5vh;
   }
   .col-1 {
     padding: 10px 20px;
@@ -38,8 +41,33 @@ p {
   .edd {
     display: none;
   }
+  .phoneback {
+    margin-top: 30vh;
+  }
+  .phone {
+    width: 100vw;
+    position: relative;
+    top: -20vh;
+  }
+  .state .titles {
+    color: #fff;
+  }
+  .state p {
+    position: relative;
+    top: -25vh;
+    color: #fff;
+  }
+  .laptopd {
+    display: none;
+  }
+  .laptopm {
+    margin-top: 10vh;
+    text-align: center;
+    width: 100vw;
+  }
 }
-@media only screen and (min-width: 601px) {
+
+@media only screen and (min-width: 901px) {
   .row {
     display: flex;
     width: 100%;
@@ -102,6 +130,9 @@ p {
   .laptopd {
     position: relative;
     left: -20vw;
+  }
+  .laptopm {
+    display: none;
   }
   .lastp {
     width: 100%;

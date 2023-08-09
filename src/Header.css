@@ -10,6 +10,8 @@ header {
   width: 100%;
   text-align: center;
   color: #fff;
+  background: linear-gradient(left to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+
 }
 ul {
   list-style-type: none;
@@ -20,7 +22,7 @@ li {
 a {
   text-decoration: none;
 }
-.content .btn1 {
+.btn1 {
   background-color: #fff;
   color: var(--light-red);
 }
@@ -29,15 +31,16 @@ a {
   color: #fff;
   border: 2px solid #fff;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 900px) {
   header {
     background-image: url("../src/bg-pattern-intro-mobile.svg");
     background-size: 200%;
     background-position: left;
     background-color: var(--light-red);
-    height: 70vh;
+    min-height: 70vh;
     color: #fff;
     border-bottom-left-radius: 100px;
+    padding-bottom: 30px;
   }
   nav {
     display: flex;
@@ -49,16 +52,38 @@ a {
   .logo {
     font-size: 2rem;
   }
+  .toggler.active {
+    transition: .5s ease-in-out;
+    display: block;
+    color: #fff;
+    z-index: 1;
+  }
   .nav-menu {
+    width: 85%;
+    height: 100vh;
     position: fixed;
-    right: -10000px;
+    top: 15vh;
+    right: -1000px;
+    background-color: #fff;
+    transition: .5s ease-in-out;
+    text-align: center;
   }
   .nav-menu.active {
     right: 0;
   }
+  .nav-menu li {
+    padding-top: 5vh;
+    color: #000;
+    text-align: center;
+    font-size: 1.5rem;
+  
+  }
+  .nav-link {
+    color: #000;
+  }
   .content {
     text-align: center;
-    padding: 50px 10px;
+    padding: 30px 10px;
   }
   .content .modern {
     font-size: 2.5rem;
@@ -68,7 +93,7 @@ a {
     font-size: 1.5rem;
   }
   .content button {
-    margin-top: 8vh;
+    margin-top: 5vh;
     display: inline;
     border-radius: 50px;
     padding: 10px 20px;
@@ -77,35 +102,67 @@ a {
     width: 40vw;
     height: 10vh;
     font-size: 1.2em;
+    font-weight: bold;
   }
 }
-@media only screen and (min-width: 601px) {
+@media only screen and (min-width: 901px) {
   header {
     background-image: url("../src/bg-pattern-intro-desktop.svg");
     background-size: 100%;
     background-position: 50%;
-    background-color: var(--light-red);
-    height: 60vh;
+    background-color: hsl(353, 100%, 62%);
+    height: 65vh;
     border-bottom-left-radius: 100px;
   }
   nav {
-    display: flex;
     width: 100%;
     padding: 2% 5%;
+    display: flex;
     align-items: center;
+    /* justify-content: center; */
   }
   .toggler {
     display: none;
   }
   .logo {
-    padding-right: 50px;
+    padding-right: 5vw;
+    padding-left: 5vw;
+    font-size: 2rem;
+    font-weight: bolder;
+  }
+  .nav-link {
+    color: #fff;
+    font-size: 120%;
+  }
+  #product, #company, #connect {
+    display: inline;
+    width: 200px;
+  }
+
+  .login {
+    /* margin-left: 30vw; */
+    padding-left: 50%;
+  }
+  .signup {
+    margin-right: auto;
+  }
+  .signup .btn1 {
+    width: 8vw;
+    height: 7vh;
+    border-radius: 50px;
+    border: none;
+  }
+  .signup .btn1 .nav-link {
+    color: var(--light-red);
+    font-weight: bold;
   }
   ul,
   .buttons {
     display: flex;
+    align-items: center;
   }
   li {
-    padding-right: 10px;
+    padding-right: 30px;
   }
   .break {
     display: none;
@@ -125,11 +182,12 @@ a {
     height: 10vh;
     justify-content: center;
     align-items: center;
+    font-weight: bold;
   }
   .buttons .btn {
     margin-right: 20px;
     height: 8vh;
-    width: 10vw;
+    width: 12vw;
     border-radius: 50px;
     border: none;
     font-size: 1.2rem;

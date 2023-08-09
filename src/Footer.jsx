@@ -6,28 +6,31 @@ export default function Footer() {
     <footer>
       <div className="logo">Blogr</div>
       <div className="product">
-        <ul className="ulf">
+        <ol>
+          <li className="title">Produce</li>
           <li>Overview</li>
           <li>Pricing</li>
           <li>Marketplace</li>
           <li>Features</li>
           <li>Integrations</li>
-        </ul>
+        </ol>
       </div>
       <div className="company">
-        <ul>
+        <ol>
+        <li className="title">Company</li>
           <li>About</li>
           <li>Team</li>
           <li>Blog</li>
           <li>Careers</li>
-        </ul>
+        </ol>
       </div>
       <div className="connect">
-        <ul>
+        <ol>
+        <li className="title">Connect</li>
           <li>Contact</li>
           <li>Newsletter</li>
           <li>LinkedIn</li>
-        </ul>
+        </ol>
       </div>
     </footer>
   );

@@ -56,6 +56,7 @@ export default function Body() {
       </div>
       <div className="last">
         <img className="laptopd" src={Laptopd} alt="A laptop" />
+        <img className="laptopm" src={Laptopm} alt="A laptop" />
         <div className="lastp">
           <p className="titles">Free, open, simple</p>
           <p>
