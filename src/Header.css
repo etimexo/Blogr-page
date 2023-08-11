@@ -1,7 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&family=Inter:wght@400;700;800&family=Overpass:wght@300;600&family=Roboto:wght@400;700&family=Rubik:wght@300;400;500&family=Ubuntu:wght@500;700&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Overpass', sans-serif;
 }
 :root {
   --light-red: hsl(356, 100%, 66%);
@@ -34,7 +36,10 @@ a {
   color: #fff;
   border: 2px solid #fff;
 }
-
+.light.active,
+.dark.active {
+  transform: rotateY("90deg");
+}
 @media only screen and (max-width: 900px) {
   header {
     background-image: url("../src/bg-pattern-intro-mobile.svg");
@@ -53,9 +58,6 @@ a {
     justify-content: space-between;
   }
 
-  .logo {
-    font-size: 2rem;
-  }
   .toggler.active {
     transition: 0.5s ease-in-out;
     display: block;
@@ -107,11 +109,11 @@ a {
     font-size: 1.2em;
     font-weight: bold;
   }
-
   .light {
     display: none;
   }
-  #connect:hover, #connect:focus {
+  #connect:hover,
+  #connect:focus {
     color: #ebdddd;
   }
   .dropdown1 {
@@ -120,10 +122,10 @@ a {
   .dropdown1.active {
     position: static;
     display: block;
-    background-color: rgb(236, 236, 226);
+    background-color: rgb(214, 214, 205);
     opacity: 0.7;
     width: 90%;
-    margin: auto;
+    margin: 5vh auto;
     color: #221e1e;
   }
   .dropdown1.active .drop-img:first-child {
@@ -131,6 +133,18 @@ a {
   }
   .dropdown1.active .drop-img {
     padding: 5px;
+  }
+  .btn1 {
+    width: 50vw;
+    height: 10vh;
+    border: none;
+    border-radius: 50px;
+    background-color: var(--light-red);
+  }
+  .btn1 .nav-link {
+    color: #fff;
+    font-weight: bold;
+    font-size: 2rem;
   }
 }
 @media only screen and (min-width: 901px) {
@@ -156,6 +170,7 @@ a {
     padding-left: 5vw;
     font-size: 2rem;
     font-weight: bolder;
+    padding-top: 2vh;
   }
   .nav-link {
     color: #fff;
@@ -187,6 +202,12 @@ a {
   .buttons {
     display: flex;
     align-items: center;
+  }
+  .btn1, .btn2 {
+    font-weight: 600;
+  }
+  .btn1:hover, .btn1:focus, .btn2:hover, .btn2:focus {
+    cursor: pointer;
   }
   li {
     padding-right: 20px;
@@ -230,13 +251,6 @@ a {
     display: none;
   }
   .dropdown1.active {
-    /* position: static;
-    display: block;
-    top: 0;
-    background-color: #fff;
-    left: 30vw;
-    margin-bottom: 5px;
-    color: #fff; */
     position: fixed;
     display: block;
     background-color: #fff;
@@ -250,6 +264,52 @@ a {
     box-shadow: -5px 2px 8px rgba(0, 0, 0, 0.15);
   }
   .dropdown1.active .drop-img {
-    padding: 5px;
+    padding: 5px 10px;
+    color: rgb(80, 76, 76);
+  }
+  .dropdown1.active .drop-img:hover,
+  .dropdown1.active .drop-img:focus {
+    color: #000;
+    cursor: pointer;
+  }
+}
+@media only screen and (min-width: 901px) and (max-width: 1200px) {
+  nav {
+    padding: 2% 3%;
+  }
+  .login {
+    padding-left: 10%;
+  }
+  .signup {
+    margin-right: 20%;
+  }
+  .dropdown1 {
+    position: relative;
+    display: none;
+  }
+  .dark {
+    display: none;
+  }
+  .dropdown1.active {
+    position: fixed;
+    display: block;
+    background-color: #fff;
+    height: 22vh;
+    top: 11%;
+    color: black;
+    left: 39vw;
+    border-radius: 2px;
+    width: 150px;
+    text-align: left;
+    box-shadow: -5px 2px 8px rgba(0, 0, 0, 0.15);
+  }
+  .dropdown1.active .drop-img {
+    padding: 5px 10px;
+    color: rgb(80, 76, 76);
+  }
+  .dropdown1.active .drop-img:hover,
+  .dropdown1.active .drop-img:focus {
+    color: #000;
+    cursor: pointer;
   }
 }
