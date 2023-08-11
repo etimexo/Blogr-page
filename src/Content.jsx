@@ -1,5 +1,6 @@
 import React from "react";
 import "./Content.css";
+import 'bootstrap'
 import Image from "./illustration-editor-mobile.svg";
 import Editord from "./illustration-editor-desktop.svg";
 import Phone from "./illustration-phones.svg";

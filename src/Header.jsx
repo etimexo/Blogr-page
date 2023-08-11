@@ -1,7 +1,8 @@
 import React, { useEffect } from "react";
 import "./Header.css";
 import Hamburger from "./icon-hamburger.svg";
-import Down from "./icon-arrow-light.svg"
+import Down from "./icon-arrow-light.svg";
+import 'bootstrap'
 // import Close from './icon-close.svg'
 export default function Header() {
   useEffect(() => {
@@ -27,9 +28,9 @@ export default function Header() {
     toggler.addEventListener("click", togglerFunction);
 }, []);
 useEffect(() => {
-  const product = document.getElementById("product");
-  const company = document.getElementById("company");
-  const connect = document.getElementById("connect");
+  // const product = document.getElementById("product");
+  // const company = document.getElementById("company");
+  // const connect = document.getElementById("connect");
 
   
 })
@@ -52,6 +53,17 @@ useEffect(() => {
     document.removeEventListener("click", handleClickOutnavMenu);
   };
 }, []);
+useEffect(() => {
+  const connect = document.getElementById("connect");
+  const dropdown1 = document.querySelector(".dropdown1");
+  
+  connect.addEventListener("mouseleave", () => {
+    dropdown1.classList.remove("active");
+  })
+  connect.addEventListener("mouseenter", () => {
+    dropdown1.classList.toggle("active");
+  })
+})
   return (
     <header className="container-fluid">
       <nav className="container nav navbar">
@@ -76,6 +88,12 @@ useEffect(() => {
             <a href="#" className="nav-link">
               Connect <span><img src={Down} alt="Dropdown arrow" /></span>
             </a>
+            <span className="dropdown1">
+              <div className="drop-img">Todo List</div>
+              <div className="drop-img">Calendar</div>
+              <div className="drop-img">Remiders</div>
+              <div className="drop-img">Planning</div>
+            </span>
           </li>
           <li className="nav-item login">
             <a href="#" className="nav-link">
