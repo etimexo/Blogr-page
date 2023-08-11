@@ -76,7 +76,7 @@ useEffect(() => {
 
         <ul className="nav-menu">
           <li className="nav-item" id="product">
-            <a href="#" className="nav-link">
+            <a href="header.jsx" className="nav-link">
               Product <span><img src={Down} alt="Dropdown arrow" /><img className="dark" src={Dark} alt="Dropdown arrow" /></span>
             </a>
           </li>
