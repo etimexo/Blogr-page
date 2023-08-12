@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Blogr-page/static/css/main.1069e229.css",
+    "main.css": "/Blogr-page/static/css/main.e74dec02.css",
     "main.js": "/Blogr-page/static/js/main.c681c866.js",
     "static/media/illustration-phones.svg": "/Blogr-page/static/media/illustration-phones.fd23559f1d2f81f9e3f3340eeaf2467c.svg",
     "static/media/illustration-editor-desktop.svg": "/Blogr-page/static/media/illustration-editor-desktop.e3274de835167f85fe2e0033ae47c2a2.svg",
@@ -14,11 +14,11 @@
     "static/media/icon-hamburger.svg": "/Blogr-page/static/media/icon-hamburger.68867946847c3249542e85c3745a1e06.svg",
     "static/media/icon-arrow-light.svg": "/Blogr-page/static/media/icon-arrow-light.9ba0f38e6df41815773e653d50260ecd.svg",
     "static/media/icon-arrow-dark.svg": "/Blogr-page/static/media/icon-arrow-dark.5215f8d979a83644d14e8b69f6ee4633.svg",
-    "main.1069e229.css.map": "/Blogr-page/static/css/main.1069e229.css.map",
+    "main.e74dec02.css.map": "/Blogr-page/static/css/main.e74dec02.css.map",
     "main.c681c866.js.map": "/Blogr-page/static/js/main.c681c866.js.map"
   },
   "entrypoints": [
-    "static/css/main.1069e229.css",
+    "static/css/main.e74dec02.css",
     "static/js/main.c681c866.js"
   ]
 }
