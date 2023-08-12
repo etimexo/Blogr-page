@@ -139,10 +139,10 @@ a {
     height: 10vh;
     border: none;
     border-radius: 50px;
-    background-color: var(--light-red);
+    background-color: #fff;
   }
   .btn1 .nav-link {
-    color: #fff;
+    color: var(--light-red);
     font-weight: bold;
     font-size: 2rem;
   }
