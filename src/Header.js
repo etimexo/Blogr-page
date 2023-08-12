@@ -41,11 +41,12 @@ useEffect(() => {
   const connect = document.getElementById("connect");
   const dropdown1 = document.querySelector(".dropdown1");
   
-  connect.addEventListener("mouseleave", () => {
-    dropdown1.classList.remove("active");
-  })
+  
   connect.addEventListener("mouseenter", () => {
     dropdown1.classList.toggle("active");
+  })
+  connect.addEventListener("mouseleave", () => {
+    dropdown1.classList.remove("active");
   })
   const isMobileDevice = () => {
     return window.innerWidth <= 900
